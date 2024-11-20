@@ -477,3 +477,129 @@ margin-bottom: 8px;
 .footer-social-logo:focus {
     background-color: #31D0AA;
 }
+.footer-form {
+display: flex;
+}
+.modal-overlay {
+background-color: rgba(0, 0, 0, 0.5);
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 999;
+transition: opacity 250ms ease-in-out;
+opacity: 1;
+pointer-events: auto;
+}
+
+.modal-overla.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    background: #FCFCFC;
+    border-radius: 4px;
+    padding: 24px;
+    width: 408px;
+    min-height: 585px;
+}
+.modal-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border-radius: 50%;
+    background-color: #E7E9FC;
+    fill: #2E2F42;
+}
+.modal-caption {
+margin-bottom: 16px;
+margin-top: 72px;
+
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+text-align: center;
+color: #2e2f42;
+}
+
+.modal-form-field {
+    margin-bottom: 16px;
+}
+
+.modal-form-label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+
+.modal-form-input {
+    width: 100%;
+    padding: 22px 24px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    height: 40px;
+    outline: transparent;
+}
+
+.modal-form-input:focus {
+    border-color:  #4d5ae5;
+}
+.modal-form-icon {
+    color: #2E2F42;
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+  
+}
+
+.modal-form-input:focus + .modal-form-icon {
+    stroke: #4D5AE5;
+}
+input,
+textarea,
+button {
+    font-family: inherit;
+    line-height: inherit;
+}
+
+textarea {
+    resize: none;
+}
+label {
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16667;
+        letter-spacing: 0.04em;
+        color: #8e8f99;
+}
+.privacy-policy-txt {
+    line-height: 1.33333;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
+}
+.form-label-sendbtn {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+            background: #4d5ae5;
+            border-radius: 4px;
+            margin: 24px auto;
+                width: 169px;
+                height: 56px;
+                font-weight: 500;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    letter-spacing: 0.04em;
+                    color: #fff;
+}
