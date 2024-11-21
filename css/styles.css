@@ -590,7 +590,7 @@ pointer-events: auto;
 .modal-btn-x {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-btn-x:hover, .modal-btn-x:focus {
+.modal-btn:hover, .modal-btn-x:focus {
     fill: #ffffff;
 }
 .modal-caption {
@@ -702,9 +702,11 @@ label {
     justify-content: center;
     fill: transparent;
 }
-.visually-hidden:checked + .privacy-policy-txt {
+input:checked + .privacy-policy-txt {
+    background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
+
 }
 .privacy-policy-a {
     color: #4d5ae5;
